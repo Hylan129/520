@@ -1,0 +1,99 @@
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <title>520，You need to try !</title>
+
+<style>
+button {
+    width:300px;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius:15px;
+    font-size: 18px;
+    }
+div {
+
+    text-align:center
+}
+
+#shelovesme1{
+    color:cyan;
+    background-color:coral;
+}
+#shelovesme2{
+    color:cyan;
+    background-color:rgb(255, 252, 80);
+}
+#shelovesme3{
+    color:cyan;
+    background-color:darksalmon;
+}
+#shelovesme4{
+    color:cyan;
+    background-color:honeydew;
+}
+#shedoesnotloveme{
+    color:cyan;
+    background-color:limegreen;
+}
+
+</style>
+
+<body>
+    <br>
+    <center><h2 >今天520，<br>老公问我需要什么礼物。</h2></center>
+    <br>
+    <div>
+    <button id="shelovesme1" 
+    onmouseover="changename1('shelovesme1','马上快要出iPhone12了，过时了')" onmouseout="changename2('shelovesme1')" 
+    onclick="alert('嗯嗯好，明年一定买哈！')"
+    value="iPhone11 Pro 256G手机" >1 iPhone11 Pro 256G手机</button><br>
+
+
+    <button id="shelovesme2" 
+    onmouseover="changename1('shelovesme2','除了好看，好像没有实际需要吧')" onmouseout="changename2('shelovesme2')" 
+    onclick="alert('嗯嗯好，明年一定买哈！')"
+    value="Mini cooper小汽车" >2 Mini cooper小汽车</button><br>
+
+    <button id="shelovesme3" 
+    onmouseover="changename1('shelovesme3','这么贵，吃饱饭要紧！')" onmouseout="changename2('shelovesme3')" 
+    onclick="alert('嗯嗯好，明年一定买哈！')" 
+    value="爱马仕包包" >3 爱马仕包包</button><br>
+
+    <button id="shelovesme4" 
+
+    onmouseover="changename1('shelovesme4','疫情还很严重，要不延后吧！')" onmouseout="changename2('shelovesme4')" 
+    onclick="alert('嗯嗯，明年一定买哈！')"
+    value="欧洲十日游" >4 欧洲十日游</button><br>
+
+    <button id="shedoesnotloveme" onclick="move1()">今年没挣钱，要不明年再买吧！</button><br>
+    
+</div>
+<br>
+<div>
+    <img id='picture' src="pickit.png" style="width: 300px;">
+    </div>>
+<script>
+
+function changename1(id,content){
+    document.getElementById(id).innerHTML = content;
+    document.getElementById(id).style.backgroundColor = 'grey';
+};
+function changename2(id){
+    document.getElementById(id).innerHTML = document.getElementById(id).value;
+};
+
+function move1(){
+    document.getElementById('picture').src = 'love.gif';
+    
+    alert('嗯嗯，谢谢理解！');
+
+}
+
+</script>
+</body>
+
+</html>
